@@ -723,3 +723,37 @@ nav ul li a.active {
     padding: 30px;
     box-shadow: var(--shadow);
     position: absolute;}
+    .view-map-btn {
+        background-color: var(--primary);
+        color: var(--white);
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+        letter-spacing: 0.5px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 3px 12px rgba(42, 82, 152, 0.2);
+    }
+    
+    .view-map-btn:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(42, 82, 152, 0.3);
+    }
+    
+    .view-map-btn i {
+        font-size: 0.8rem;
+    }
+    
+    /* If you want to add an icon before the text */
+    .view-map-btn::before {
+        content: "\f279"; /* FontAwesome map-marker-alt icon */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.9rem;
+    }
